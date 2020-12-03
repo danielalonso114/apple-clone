@@ -7,7 +7,6 @@ html,
 body {
   width: 100%
   height: auto;
-  overflow:scroll;
   margin: 0px;
 }
 
@@ -226,7 +225,7 @@ nav a.active {
 
 }
 
-.shop-cta {
+.shop-cta a {
   background: #0071e3;
   border-radius: 20px;
   font-size: 17px;
@@ -235,5 +234,11 @@ nav a.active {
   font-weight: 200;
   margin-bottom: 50px;
   padding: 5px 15px 5px 15px;
+  text-decoration: none;
 
+}
+
+.shop-cta a:hover {
+  opacity: .9;
+  
 }
