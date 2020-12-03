@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "DanCustomFont";
+  /* link custom apple fonts here - SF Pro */
+}
+
+html,
+body {
+  width: 100%
+  height: auto;
+  overflow:scroll;
+  margin: 0px;
+}
+
+html {
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  color: white;
+  opacity: 0.7;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 35px;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+nav a.active {
+  opacity: 0.5;
+}
+
+.apple-logo {
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg); */
+
+  background-image: url(https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg);
+
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+.search-logo {
+  background-size: 18px 88px;
+  background-repeat: no-repeat;
+  background-position: center 9px;
+  background-image: url(https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg);
+  width: 18px;
+}
+
+/*
+.search-logo:hover {
+  background-position: center -35px;
+  color: white;
+} */
+
+.bag-logo {
+  background-size: 17px 44px;
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-image: url(https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg);
+  width: 17px;
+  opacity: 0.7;
+}
+
+.message-bar {
+  background-color: #e34141;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.message-copy {
+  color: white;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+}
+
+.message-copy a {
+  color: white;
+  text-decoration: none;
+}
+
+.message-copy a:hover {
+  text-decoration: underline;
+}
+
+.message-copy a span {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+/* HOW TO CENTER IMAGE -- https://stackoverflow.com/questions/14562457/center-oversized-image-in-div/41059954 */
+
+.red-ad-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  color: white;
+  /*   border: 1px solid green; */
+  margin: 0px auto;
+  
+  /*   padding: 10px 0; */
+  overflow: hidden;
+}
+
+.red-ad-image {
+  width: 150%;
+  /* background-image: url(https://www.apple.com/v/home/q/images/heroes/world-aids-day/hero__dvsxv8smkkgi_large.jpg); */
+  background-image: url(images/hero__dvsxv8smkkgi_large.jpg);
+  background-repeat: no-repeat;
+  background-size: 3010px 624px;
+  width: 3010px;
+  height: 624px;
+  /* Set left edge of inner element to 50% of the parent element */
+  margin-left: 50%;
+  /* Move to the left by 50% of own width */
+  transform: translateX(-50%);
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 20%;
+
+}
+
+.text-wrapper h2{
+  position: relative;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -.005em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  top: 0px;
+  /* background-color: blue; */
+}
+
+.text-wrapper h3{
+  position: relative;
+  margin-top: 0px;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  top: -30px;
+    /* background-color: yellow; */
+}
+
+.text-wrapper h4{
+  position: relative;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  top: -50px;
+    /* background-color: purple; */
+}
+
+
+/* ----  Give something wonderful module ----- */
+
+.wonderful-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+   /*  border: 10px solid green; */
+
+}
+
+/* apple present image */
+.apple-present-img {
+  background-image: url(images/apple-present-image.png);
+  width: 57px;
+  height:  70px;
+  background-size: 57px 70px;
+  background-repeat: no-repeat;
+  margin-top: 60px; 
+  }
+
+.wonderful-container h2 {
+  color: black;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  /* background: teal; */
+
+}
+
+.shop-cta {
+  background: #0071e3;
+  border-radius: 20px;
+  font-size: 17px;
+  color: white;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 200;
+  margin-bottom: 50px;
+  padding: 5px 15px 5px 15px;
+
+}
